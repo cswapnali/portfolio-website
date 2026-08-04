@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // Configuration: Replace with your actual email address to receive contact messages
-  const RECIPIENT_EMAIL = "swapnali.ai14@gmail.com";
+  const RECIPIENT_EMAIL = "0782309f43ba3325bf55574683e194de";
 
   window.openContactModal = function () {
     if (modalOverlay) {
