@@ -37,10 +37,7 @@
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#competencies" class="nav-link">Strengths</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
-<<<<<<< HEAD
           <li><a href="#projects" class="nav-link">Projects</a></li>
-=======
->>>>>>> 8d22e573ad8de57a68ca49254dbaa94f29779dc5
           <li><a href="#experience" class="nav-link">Experience</a></li>
           <li><a href="#architecture" class="nav-link">Architecture</a></li>
           <li><a href="#education" class="nav-link">Education</a></li>
@@ -338,91 +335,6 @@
     </div>
   </section>
 
-<<<<<<< HEAD
-  <!-- Featured AI & Machine Learning Projects Section -->
-  <section class="section-padding" id="projects">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Featured Projects</span>
-        <h2 class="section-title">AI, Machine Learning & Security Solutions</h2>
-        <p class="section-subtitle">
-          Enterprise-grade Retrieval-Augmented Generation (RAG) platforms, cascading threat classification engines, and intelligent automation systems.
-        </p>
-      </div>
-
-      <div class="projects-showcase" style="grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 28px;">
-
-        <!-- Project 1: CyberLogAI -->
-        <div class="project-card" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-          <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-              <span class="project-tag" style="background-color: #eff6ff; color: #2563eb; border: 1px solid rgba(37,99,235,0.2);"><i class="fas fa-shield-halved"></i> Cybersecurity & AI</span>
-              <span style="font-size: 0.8rem; font-weight: 600; color: var(--text-muted);"><i class="fas fa-layer-group"></i> Multi-Tier Architecture</span>
-            </div>
-            <h3 class="project-title" style="font-size: 1.35rem; margin-bottom: 12px;">CyberLogAI — Multi-Tier Log Threat Classifier</h3>
-            <p class="project-desc" style="margin-bottom: 16px;">
-              Automated security log threat intelligence system powered by a cascading hybrid architecture. Combines deterministic regex, statistical machine learning (BERT embeddings + Logistic Regression), and Groq LLM reasoning for high-accuracy threat detection.
-            </p>
-            <ul class="project-bullets" style="margin-bottom: 20px;">
-              <li><strong>Cascading 3-Tier Classifier</strong>: Rule-based pre-filtering (Tier 1) → BERT vector embeddings & Logistic Regression (Tier 2) → Groq LLM reasoning engine (Tier 3).</li>
-              <li><strong>Interactive Analytics Dashboard</strong>: Streamlit UI for batch log ingest, interactive threat metric visualizers, and exportable reports.</li>
-              <li><strong>FastAPI Async Backend</strong>: High-throughput REST API with <code>/classify</code> and <code>/health</code> endpoints.</li>
-            </ul>
-          </div>
-          <div>
-            <div class="tech-tags" style="margin-bottom: 20px;">
-              <span class="tech-pill">FastAPI</span>
-              <span class="tech-pill">Streamlit</span>
-              <span class="tech-pill">BERT Sentence Transformers</span>
-              <span class="tech-pill">Groq LLM</span>
-              <span class="tech-pill">Scikit-Learn</span>
-              <span class="tech-pill">PyTorch</span>
-              <span class="tech-pill">Python</span>
-            </div>
-            <button class="btn btn-primary btn-sm project-action-btn" onclick="openProjectModal('cyberLogAI')" style="width: 100%;">
-              <i class="fas fa-layer-group"></i> View Architecture & Details
-            </button>
-          </div>
-        </div>
-
-        <!-- Project 2: SecureRAG Enterprise -->
-        <div class="project-card" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-          <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-              <span class="project-tag" style="background-color: #f0fdf4; color: #16a34a; border: 1px solid rgba(22,163,74,0.2);"><i class="fas fa-lock"></i> Enterprise GenAI & RAG</span>
-              <span style="font-size: 0.8rem; font-weight: 600; color: var(--text-muted);"><i class="fas fa-shield-cat"></i> RBAC & Guardrails</span>
-            </div>
-            <h3 class="project-title" style="font-size: 1.35rem; margin-bottom: 12px;">SecureRAG Enterprise — RBAC & Guardrailed RAG System</h3>
-            <p class="project-desc" style="margin-bottom: 16px;">
-              Enterprise-grade Retrieval-Augmented Generation (RAG) system designed to query private corporate data securely. Features 5-level RBAC, PII redaction, out-of-scope interception, token cost tracker, and RAGAS triad evals.
-            </p>
-            <ul class="project-bullets" style="margin-bottom: 20px;">
-              <li><strong>RAGAS Evaluation Framework</strong>: Continuous evals measuring Faithfulness, Answer Relevancy, and Context Precision.</li>
-              <li><strong>5-Level Role-Based Access (RBAC)</strong>: Metadata vector filter isolation (<code>{"role": {"$in": allowed_roles}}</code>) in ChromaDB.</li>
-              <li><strong>Guardrails & Cost Engine</strong>: Automatic PII sanitization (Email, SSN, API Keys) & real-time USD token cost monitoring.</li>
-            </ul>
-          </div>
-          <div>
-            <div class="tech-tags" style="margin-bottom: 20px;">
-              <span class="tech-pill">FastAPI</span>
-              <span class="tech-pill">Streamlit</span>
-              <span class="tech-pill">ChromaDB</span>
-              <span class="tech-pill">Groq Llama 3.3 70B</span>
-              <span class="tech-pill">RAGAS Framework</span>
-              <span class="tech-pill">Python</span>
-            </div>
-            <button class="btn btn-primary btn-sm project-action-btn" onclick="openProjectModal('secureRAG')" style="width: 100%;">
-              <i class="fas fa-shield-cat"></i> View Architecture & Details
-            </button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-=======
->>>>>>> 8d22e573ad8de57a68ca49254dbaa94f29779dc5
   <!-- Professional Experience & Key Projects Section -->
   <section class="section-padding" id="experience">
     <div class="container">

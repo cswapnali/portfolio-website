@@ -166,7 +166,6 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
       `
-<<<<<<< HEAD
     },
     cyberLogAI: {
       title: "CyberLogAI — Multi-Tier Security Log Threat Classification System",
@@ -302,8 +301,6 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
       `
-=======
->>>>>>> 8d22e573ad8de57a68ca49254dbaa94f29779dc5
     }
   };
 
