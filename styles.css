@@ -1104,7 +1104,11 @@ button {
 .modal-container {
   background-color: var(--bg-card);
   border-radius: var(--radius-lg);
+<<<<<<< HEAD
   max-width: 720px;
+=======
+  max-width: 650px;
+>>>>>>> 8d22e573ad8de57a68ca49254dbaa94f29779dc5
   width: 100%;
   max-height: 90vh;
   overflow-y: auto;
