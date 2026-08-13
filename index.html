@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swapnali Choudhari | Software Developer & AI/ML Engineer</title>
+  <meta name="description"
+    content="Portfolio of Swapnali Choudhari - Software Developer specializing in Python, FastAPI, React, SQL/PostgreSQL, Machine Learning, and n8n Workflow Automation.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Sticky Glassmorphic Header / Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#hero" class="logo" id="logo">
+        <div class="logo-icon">SC</div>
+        <span>Swapnali Choudhari</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#competencies" class="nav-link">Strengths</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#architecture" class="nav-link">Architecture</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm" onclick="openContactModal()">
+          <i class="fas fa-paper-plane"></i> Get in Touch
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="availability-pill">
+          <span class="status-dot"></span>
+          <span>Outcomes-Focused Software Developer & AI/ML Specialist</span>
+        </div>
+
+        <h1 class="hero-title">
+          Engineering High-Performance <span class="highlight">Web Apps</span> & Automation Pipelines.
+        </h1>
+
+        <h2 class="hero-subtitle">FastAPI • Python • React • PostgreSQL • n8n Workflows</h2>
+
+        <p class="hero-description">
+          2+ years of experience engineering database-driven web applications, modernizing legacy systems, and crafting
+          automated workflow pipelines. Specializing in microservices, SQL optimization, machine learning analytics, and
+          algorithm integration.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#experience" class="btn btn-primary">
+            <i class="fas fa-briefcase"></i> View Experience
+          </a>
+          <button onclick="openContactModal()" class="btn btn-outline">
+            <i class="fas fa-envelope"></i> Contact Me
+          </button>
+        </div>
+
+        <div class="hero-socials">
+          <span>Connect:</span>
+          <a href="https://github.com/cswapnali" target="_blank" rel="noopener" class="social-link">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/swapnali-choudhari/" target="_blank" rel="noopener" class="social-link">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <span style="margin-left: 10px;"><i class="fas fa-location-dot" style="color: var(--primary);"></i>
+            India</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <img src="assets/hero_illustration.png" alt="Swapnali Choudhari Developer Workstation Illustration"
+            class="hero-img">
+
+          <div class="floating-badge badge-top">
+            <div class="badge-icon fastapi"><i class="fas fa-bolt"></i></div>
+            <div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">Backend</div>
+              <div>FastAPI Microservices</div>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom">
+            <div class="badge-icon react"><i class="fab fa-react"></i></div>
+            <div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">Frontend</div>
+              <div>React Dashboards</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Impact Metrics Bar -->
+  <section class="metrics-bar">
+    <div class="container metrics-grid">
+      <div class="metric-card">
+        <div class="metric-number">2+</div>
+        <div class="metric-label">Years Software Dev Experience</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-number">100%</div>
+        <div class="metric-label">Decoupled Microservices Migration</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-number">n8n</div>
+        <div class="metric-label">Automated Workflow Integration</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-number">SQL</div>
+        <div class="metric-label">High-Throughput PostgreSQL DBs</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Summary & Core Competencies Section -->
+  <section class="section-padding" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Professional Summary</span>
+        <h2 class="section-title">Architecting Data-Driven Solutions</h2>
+        <p class="section-subtitle">
+          Outcomes-focused Software Developer with hands-on experience creating database-driven web applications,
+          microservices, and automation platforms by leveraging Python, FastAPI, and React.
+        </p>
+      </div>
+
+      <!-- Strengths Grid -->
+      <div class="strengths-grid" id="competencies">
+        <div class="strength-card">
+          <div class="strength-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3 class="strength-title">Analytical Problem Solving</h3>
+          <p class="strength-desc">
+            Skilled in debugging legacy complex platforms, designing scalable relational data layers, and engineering
+            robust backend automations for peak efficiency.
+          </p>
+        </div>
+
+        <div class="strength-card">
+          <div class="strength-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3 class="strength-title">Technical Collaboration</h3>
+          <p class="strength-desc">
+            Excellent communicator adept at translating complex technical designs, ML pipelines, and data processes into
+            intuitive business logic.
+          </p>
+        </div>
+
+        <div class="strength-card">
+          <div class="strength-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3 class="strength-title">Proactive Execution</h3>
+          <p class="strength-desc">
+            Disciplined, detail-oriented engineer committed to continuous optimization, balancing full-time software
+            execution with advancing AI/ML competencies.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Matrix Section -->
+  <section class="section-padding" id="skills" style="background-color: var(--bg-subtle);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Expertise</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">
+          A comprehensive toolkit encompassing modern web frameworks, data science libraries, database optimization, and
+          workflow automation.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="skills-tabs">
+        <button class="tab-btn active" data-filter="all">All Skills</button>
+        <button class="tab-btn" data-filter="backend">Languages & Frameworks</button>
+        <button class="tab-btn" data-filter="data">Data & Machine Learning</button>
+        <button class="tab-btn" data-filter="automation">Tools & Workflows</button>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="skills-grid">
+        <!-- Backend / Languages -->
+        <div class="skill-card" data-category="backend">
+          <div class="skill-icon"><i class="fab fa-python"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">Python</div>
+            <div class="skill-category">Backend & ML Core</div>
+            <div class="skill-level-bar">
+              <div class="skill-level-fill" style="width: 95%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="backend">
+          <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">FastAPI</div>
+            <div class="skill-category">Async Web Microservices</div>
+            <div class="skill-level-bar">
+              <div class="skill-level-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="backend">
+          <div class="skill-icon"><i class="fab fa-react"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">React</div>
+            <div class="skill-category">Interactive Frontends</div>
+            <div class="skill-level-bar">
+              <div class="skill-level-fill" style="width: 85%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data & ML -->
+        <div class="skill-card" data-category="data">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">SQL & PostgreSQL</div>
+            <div class="skill-category">Relational Workflows</div>
+            <div class="skill-level-bar">
+              <div class="skill-level-fill" style="width: 92%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="data">
+          <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">Machine Learning</div>
+            <div class="skill-category">Predictive Analytics</div>
+            <div class="skill-level-bar">
+              <div class="skill-level-fill" style="width: 82%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="data">
+          <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">Scikit-Learn (SKLearn)</div>
+            <div class="skill-category">Model Engineering</div>
+            <div class="skill-level-bar">
+              <div class="skill-level-fill" style="width: 80%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="data">
+          <div class="skill-icon"><i class="fas fa-table"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">Pandas</div>
+            <div class="skill-category">Data Manipulation</div>
+            <div class="skill-level-bar">
+              <div class="skill-level-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Workflows -->
+        <div class="skill-card" data-category="automation">
+          <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">n8n Automation</div>
+            <div class="skill-category">Event-Driven Workflows</div>
+            <div class="skill-level-bar">
+              <div class="skill-level-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="automation">
+          <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">Git</div>
+            <div class="skill-category">Version Control</div>
+            <div class="skill-level-bar">
+              <div class="skill-level-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="automation">
+          <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">RESTful APIs</div>
+            <div class="skill-category">Integration Contracts</div>
+            <div class="skill-level-bar">
+              <div class="skill-level-fill" style="width: 94%;"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured AI & Machine Learning Projects Section -->
+  <section class="section-padding" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Featured Projects</span>
+        <h2 class="section-title">AI, Machine Learning & Security Solutions</h2>
+        <p class="section-subtitle">
+          Enterprise-grade Retrieval-Augmented Generation (RAG) platforms, cascading threat classification engines, and intelligent automation systems.
+        </p>
+      </div>
+
+      <div class="projects-showcase" style="grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 28px;">
+
+        <!-- Project 1: CyberLogAI -->
+        <div class="project-card" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span class="project-tag" style="background-color: #eff6ff; color: #2563eb; border: 1px solid rgba(37,99,235,0.2);"><i class="fas fa-shield-halved"></i> Cybersecurity & AI</span>
+              <span style="font-size: 0.8rem; font-weight: 600; color: var(--text-muted);"><i class="fas fa-layer-group"></i> Multi-Tier Architecture</span>
+            </div>
+            <h3 class="project-title" style="font-size: 1.35rem; margin-bottom: 12px;">CyberLogAI — Multi-Tier Log Threat Classifier</h3>
+            <p class="project-desc" style="margin-bottom: 16px;">
+              Automated security log threat intelligence system powered by a cascading hybrid architecture. Combines deterministic regex, statistical machine learning (BERT embeddings + Logistic Regression), and Groq LLM reasoning for high-accuracy threat detection.
+            </p>
+            <ul class="project-bullets" style="margin-bottom: 20px;">
+              <li><strong>Cascading 3-Tier Classifier</strong>: Rule-based pre-filtering (Tier 1) → BERT vector embeddings & Logistic Regression (Tier 2) → Groq LLM reasoning engine (Tier 3).</li>
+              <li><strong>Interactive Analytics Dashboard</strong>: Streamlit UI for batch log ingest, interactive threat metric visualizers, and exportable reports.</li>
+              <li><strong>FastAPI Async Backend</strong>: High-throughput REST API with <code>/classify</code> and <code>/health</code> endpoints.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="tech-tags" style="margin-bottom: 20px;">
+              <span class="tech-pill">FastAPI</span>
+              <span class="tech-pill">Streamlit</span>
+              <span class="tech-pill">BERT Sentence Transformers</span>
+              <span class="tech-pill">Groq LLM</span>
+              <span class="tech-pill">Scikit-Learn</span>
+              <span class="tech-pill">PyTorch</span>
+              <span class="tech-pill">Python</span>
+            </div>
+            <button class="btn btn-primary btn-sm project-action-btn" onclick="openProjectModal('cyberLogAI')" style="width: 100%;">
+              <i class="fas fa-layer-group"></i> View Architecture & Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 2: SecureRAG Enterprise -->
+        <div class="project-card" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span class="project-tag" style="background-color: #f0fdf4; color: #16a34a; border: 1px solid rgba(22,163,74,0.2);"><i class="fas fa-lock"></i> Enterprise GenAI & RAG</span>
+              <span style="font-size: 0.8rem; font-weight: 600; color: var(--text-muted);"><i class="fas fa-shield-cat"></i> RBAC & Guardrails</span>
+            </div>
+            <h3 class="project-title" style="font-size: 1.35rem; margin-bottom: 12px;">SecureRAG Enterprise — RBAC & Guardrailed RAG System</h3>
+            <p class="project-desc" style="margin-bottom: 16px;">
+              Enterprise-grade Retrieval-Augmented Generation (RAG) system designed to query private corporate data securely. Features 5-level RBAC, PII redaction, out-of-scope interception, token cost tracker, and RAGAS triad evals.
+            </p>
+            <ul class="project-bullets" style="margin-bottom: 20px;">
+              <li><strong>RAGAS Evaluation Framework</strong>: Continuous evals measuring Faithfulness, Answer Relevancy, and Context Precision.</li>
+              <li><strong>5-Level Role-Based Access (RBAC)</strong>: Metadata vector filter isolation (<code>{"role": {"$in": allowed_roles}}</code>) in ChromaDB.</li>
+              <li><strong>Guardrails & Cost Engine</strong>: Automatic PII sanitization (Email, SSN, API Keys) & real-time USD token cost monitoring.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="tech-tags" style="margin-bottom: 20px;">
+              <span class="tech-pill">FastAPI</span>
+              <span class="tech-pill">Streamlit</span>
+              <span class="tech-pill">ChromaDB</span>
+              <span class="tech-pill">Groq Llama 3.3 70B</span>
+              <span class="tech-pill">RAGAS Framework</span>
+              <span class="tech-pill">Python</span>
+            </div>
+            <button class="btn btn-primary btn-sm project-action-btn" onclick="openProjectModal('secureRAG')" style="width: 100%;">
+              <i class="fas fa-shield-cat"></i> View Architecture & Details
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Experience & Key Projects Section -->
+  <section class="section-padding" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career Journey</span>
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">
+          Proven track record of engineering scalable platforms and leading architectural modernization initiatives.
+        </p>
+      </div>
+
+      <div class="experience-timeline">
+
+        <!-- Timeline Item 1: Software Developer @ TagID Solutions -->
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <i class="fas fa-check" style="font-size: 0.8rem; color: var(--primary);"></i>
+          </div>
+
+          <div class="timeline-content">
+            <div class="exp-header">
+              <div>
+                <h3 class="role-title">Software Developer</h3>
+                <div class="company-badge"><i class="fas fa-building"></i> TagID Solutions</div>
+              </div>
+              <span class="exp-date"><i class="far fa-calendar-alt"></i> June 2024 – Present</span>
+            </div>
+
+            <!-- Key Projects Showcase Grid -->
+            <div class="projects-showcase">
+
+              <!-- Project Card A: Production Planning System -->
+              <div class="project-card">
+                <div>
+                  <div class="project-tag">Core Platform</div>
+                  <h4 class="project-title">Production Planning System</h4>
+                  <p class="project-desc">
+                    Built an interactive scheduling and dispatch management platform powered by FastAPI backend & React
+                    frontend.
+                  </p>
+                  <ul class="project-bullets">
+                    <li>Engineered interactive internal scheduling and inventory dispatch interface.</li>
+                    <li>Optimized SQL/PostgreSQL relational workflows to process transactions efficiently.</li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="tech-tags">
+                    <span class="tech-pill">FastAPI</span>
+                    <span class="tech-pill">React</span>
+                    <span class="tech-pill">PostgreSQL</span>
+                  </div>
+                  <button class="btn btn-secondary btn-sm project-action-btn" onclick="openProjectModal('prodSystem')">
+                    <i class="fas fa-info-circle"></i> View Details
+                  </button>
+                </div>
+              </div>
+
+              <!-- Project Card B: Portal Migration & Architecture Modernisation -->
+              <div class="project-card">
+                <div>
+                  <div class="project-tag">Architecture Overhaul & Query Performance</div>
+                  <h4 class="project-title">Portal Migration & Architecture Modernisation</h4>
+                  <p class="project-desc">
+                    Migrated legacy PHP monolith to a decoupled microservices architecture (React, FastAPI, PostgreSQL)
+                    and developed interactive User/Admin portals for real-time order tracking and production analytics.
+                  </p>
+                  <ul class="project-bullets">
+                    <li><strong>Query Performance & Acceleration</strong>: Optimized database query performance and
+                      asynchronous backend services, accelerating Order Summary report generation from <strong>2 minutes
+                        to 30 seconds</strong>.</li>
+                    <li><strong>User & Admin Portals</strong>: Engineered self-service RFID tag order placement &
+                      tracking for users, alongside admin controls for customer records and daily tag production metrics
+                      (tags produced per day).</li>
+                    <li><strong>Decoupled Microservices</strong>: Replaced legacy monolithic PHP code with modular,
+                      high-performance FastAPI web services.</li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="tech-tags">
+                    <span class="tech-pill">PHP Monolith Migration</span>
+                    <span class="tech-pill">FastAPI</span>
+                    <span class="tech-pill">React</span>
+                    <span class="tech-pill">PostgreSQL</span>
+                    <span class="tech-pill">Query Optimization (Order Report 2m → 30s)</span>
+                  </div>
+                  <button class="btn btn-secondary btn-sm project-action-btn"
+                    onclick="openProjectModal('migrationSystem')">
+                    <i class="fas fa-info-circle"></i> View Details
+                  </button>
+                </div>
+              </div>
+
+              <!-- Project Card C: n8n Workflow System -->
+              <div class="project-card">
+                <div>
+                  <div class="project-tag">Automation Pipeline</div>
+                  <h4 class="project-title">Automated Order Workflow (n8n)</h4>
+                  <p class="project-desc">
+                    Configured event-driven n8n workflows for automated email communication triggers and delivery
+                    resolution.
+                  </p>
+                  <ul class="project-bullets">
+                    <li>Automated tracking and delivery updates for "Artwork Rejected" pipeline entries.</li>
+                    <li>Ensured zero-delay escalation and timely operational resolution.</li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="tech-tags">
+                    <span class="tech-pill">n8n Automation</span>
+                    <span class="tech-pill">Python</span>
+                    <span class="tech-pill">Webhooks</span>
+                  </div>
+                  <button class="btn btn-secondary btn-sm project-action-btn" onclick="openProjectModal('n8nSystem')">
+                    <i class="fas fa-info-circle"></i> View Details
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2: Software Intern @ TagID Solutions -->
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <i class="fas fa-code-branch" style="font-size: 0.8rem; color: var(--primary);"></i>
+          </div>
+
+          <div class="timeline-content">
+            <div class="exp-header">
+              <div>
+                <h3 class="role-title">Software Intern</h3>
+                <div class="company-badge"><i class="fas fa-building"></i> TagID Solutions</div>
+              </div>
+              <span class="exp-date"><i class="far fa-calendar-alt"></i> March 2024 – May 2024</span>
+            </div>
+
+            <div class="projects-showcase" style="grid-template-columns: 1fr;">
+              <div class="project-card">
+                <div>
+                  <div class="project-tag">Operations & Analytics</div>
+                  <h4 class="project-title">Operations & Order Tracking System</h4>
+                  <p class="project-desc">
+                    Created a centralized system for tracking live production operations and structured QC volume
+                    metrics.
+                  </p>
+                  <ul class="project-bullets">
+                    <li>Integrated FastAPI, React, and SQL/PostgreSQL databases for end-to-end real-time operational
+                      visibility.</li>
+                    <li>Engineered tracking modules for production volume, QC approved volume, and dispatch file volume
+                      metrics.</li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="tech-tags">
+                    <span class="tech-pill">FastAPI</span>
+                    <span class="tech-pill">React</span>
+                    <span class="tech-pill">SQL/PostgreSQL</span>
+                    <span class="tech-pill">QC Metrics</span>
+                  </div>
+                  <button class="btn btn-secondary btn-sm project-action-btn" onclick="openProjectModal('opsSystem')">
+                    <i class="fas fa-info-circle"></i> View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive System Architecture Visualizer -->
+  <section class="section-padding architecture-section" id="architecture">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">System Design</span>
+        <h2 class="section-title">Architecture & Workflow Showcase</h2>
+        <p class="section-subtitle">
+          Interactive visualization of the microservices and automation pipelines engineered for high throughput.
+        </p>
+      </div>
+
+      <div class="arch-visualizer">
+        <div class="arch-nav">
+          <button class="arch-nav-btn active" data-arch="fastapiFlow">FastAPI & React Microservice Flow</button>
+          <button class="arch-nav-btn" data-arch="n8nFlow">n8n Event Automation Pipeline</button>
+          <button class="arch-nav-btn" data-arch="sqlFlow">PostgreSQL DB Optimization Layer</button>
+        </div>
+
+        <!-- Flow 1: FastAPI Microservice -->
+        <div class="arch-diagram-flow arch-flow-content" id="fastapiFlow">
+          <div class="flow-step">
+            <div class="flow-step-number">1</div>
+            <div class="flow-step-title">React UI Client</div>
+            <div class="flow-step-desc">Order Tracking & Scheduling Dashboard</div>
+          </div>
+          <div class="flow-connector"><i class="fas fa-arrow-right"></i></div>
+          <div class="flow-step">
+            <div class="flow-step-number">2</div>
+            <div class="flow-step-title">FastAPI Web Service</div>
+            <div class="flow-step-desc">Async REST API Endpoints & Auth</div>
+          </div>
+          <div class="flow-connector"><i class="fas fa-arrow-right"></i></div>
+          <div class="flow-step">
+            <div class="flow-step-number">3</div>
+            <div class="flow-step-title">PostgreSQL Layer</div>
+            <div class="flow-step-desc">Indexed Relational Transaction DB</div>
+          </div>
+        </div>
+
+        <!-- Flow 2: n8n Pipeline -->
+        <div class="arch-diagram-flow arch-flow-content" id="n8nFlow" style="display: none;">
+          <div class="flow-step">
+            <div class="flow-step-number">1</div>
+            <div class="flow-step-title">Email / Trigger</div>
+            <div class="flow-step-desc">Flagged as "Artwork Rejected"</div>
+          </div>
+          <div class="flow-connector"><i class="fas fa-arrow-right"></i></div>
+          <div class="flow-step">
+            <div class="flow-step-number">2</div>
+            <div class="flow-step-title">n8n Engine</div>
+            <div class="flow-step-desc">Parses Payload & Webhook Event</div>
+          </div>
+          <div class="flow-connector"><i class="fas fa-arrow-right"></i></div>
+          <div class="flow-step">
+            <div class="flow-step-number">3</div>
+            <div class="flow-step-title">Delivery Pipeline</div>
+            <div class="flow-step-desc">Updates Database & Notifies Teams</div>
+          </div>
+        </div>
+
+        <!-- Flow 3: PostgreSQL Optimization -->
+        <div class="arch-diagram-flow arch-flow-content" id="sqlFlow" style="display: none;">
+          <div class="flow-step">
+            <div class="flow-step-number">1</div>
+            <div class="flow-step-title">Raw Operations Query</div>
+            <div class="flow-step-desc">Production & QC Volume Aggregates</div>
+          </div>
+          <div class="flow-connector"><i class="fas fa-arrow-right"></i></div>
+          <div class="flow-step">
+            <div class="flow-step-number">2</div>
+            <div class="flow-step-title">Index & Query Optimization</div>
+            <div class="flow-step-desc">Optimized SQL Relational Workflows</div>
+          </div>
+          <div class="flow-connector"><i class="fas fa-arrow-right"></i></div>
+          <div class="flow-step">
+            <div class="flow-step-number">3</div>
+            <div class="flow-step-title">Sub-100ms Response</div>
+            <div class="flow-step-desc">Real-Time Executive Metrics</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Certifications Section -->
+  <section class="section-padding" id="education">
+    <div class="container">
+      <div class="edu-cert-grid">
+
+        <!-- Education Card -->
+        <div class="card-box">
+          <h3 class="box-title">
+            <i class="fas fa-graduation-cap box-title-icon"></i> Education
+          </h3>
+
+          <div class="edu-item">
+            <div class="item-degree">Bachelor of Engineering (B.E.)</div>
+            <div class="item-institution">Electronics and Telecommunications</div>
+            <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 4px;">
+              M. G. M. College of Engineering and Technology
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications Card -->
+        <div class="card-box">
+          <h3 class="box-title">
+            <i class="fas fa-certificate box-title-icon"></i> Certifications & Credentials
+          </h3>
+
+          <div class="cert-item">
+            <div class="item-degree">MySQL Basics & Relational Databases</div>
+            <div class="item-institution">Great Learning</div>
+            <div class="item-date"><i class="far fa-calendar-alt"></i> June 2022</div>
+          </div>
+
+          <div class="cert-item">
+            <div class="item-degree">Programming with Python</div>
+            <div class="item-institution">Internshala Training</div>
+            <div class="item-date"><i class="far fa-calendar-alt"></i> February 2019</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footer Section -->
+  <section class="section-padding contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <span class="section-tag">Let's Collaborate</span>
+        <h2 class="section-title">Available for Engineering Opportunities</h2>
+        <p class="section-subtitle" style="margin-bottom: 24px;">
+          Whether you are looking to build high-performance Python/FastAPI backends, modernize legacy web applications,
+          or build intelligent automation workflows, let's connect!
+        </p>
+
+        <div class="contact-methods">
+          <a href="https://github.com/cswapnali" target="_blank" rel="noopener" class="contact-btn">
+            <i class="fab fa-github"></i>
+            <span>GitHub Profile</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/swapnali-choudhari/" target="_blank" rel="noopener" class="contact-btn">
+            <i class="fab fa-linkedin" style="color: #0a66c2;"></i>
+            <span>LinkedIn Profile</span>
+          </a>
+        </div>
+
+        <div>
+          <button onclick="openContactModal()" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Send Direct Message
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Swapnali Choudhari • Software Developer & AI/ML Engineer. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Reusable Modal Popup Overlay -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-container">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <h3 id="modalTitle" style="font-size: 1.5rem; font-weight: 800; color: var(--text-primary); margin-bottom: 20px;">
+        Modal Title</h3>
+      <div id="modalBody">
+        <!-- Content dynamically injected via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
